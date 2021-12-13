@@ -1,4 +1,5 @@
 #Find the odd occurance number
+# Count Solution
 
 def oddOcc(l):
     for i in l:
@@ -13,3 +14,20 @@ print(oddOcc(l))
 print(oddOcc(li))
 print(oddOcc(lis))
 print(oddOcc(lis1))
+
+#Bitwise XOR solution
+
+def oddOcc1(l):
+    res = 0
+    for x in l:
+        res = res ^ x
+    return res
+
+l = [10, 30, 30, 10, 30, 30, 20]
+li = [10, 10, 10, 10, 10, 20, 20]
+lis = [10, 10, 20, 30, 30, 20, 40]
+lis1 = [10]
+print(oddOcc1(l))
+print(oddOcc1(li))
+print(oddOcc1(lis))
+print(oddOcc1(lis1))
