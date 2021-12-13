@@ -1,0 +1,12 @@
+#Reverse a list in python
+def Rev(l):
+    ano = []
+    while(len(l)):
+        p = l.pop()
+        ano.append(p)
+        continue
+    return ano
+
+l = [10, 20, 30, 40]
+lis = ["geeks", "ide", "courses"]
+print(Rev(lis))
