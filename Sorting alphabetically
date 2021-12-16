@@ -1,0 +1,10 @@
+def WinSort(winners):
+    an = []
+    while(winners):
+        x = (min(winners))
+        d = winners.index(x)
+        t = winners.pop(d)
+        an.append(t)
+    return(an)
+winners = ['Kazuo Ishiguro', 'Rainer Weiss', 'Youyou Tu', 'Malala Yousafzai', 'Alice Munro', 'Alvin E. Roth']
+print(WinSort(winners))
